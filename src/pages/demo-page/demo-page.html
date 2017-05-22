@@ -12,6 +12,7 @@
     <p>你好，{{greeting}}</p>
     <label><input type="checkbox" [(ngModel)]="isShowMore">是否显示详细信息</label>
     <p *ngIf="isShowMore" myhighlight>详细信息2333333333333333333333333333</p>
-    <button ion-button block (click)="sendToChild(msgToChild)">将  {{msgToChild}}  发给子页</button>
+    <button ion-button block (click)="sendToChildPage(msgToChild)">将  {{msgToChild}}  发给子页</button>
+    <demochild [sayhello]="sayHello"></demochild>
   </div>
 </ion-content>

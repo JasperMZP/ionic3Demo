@@ -11,6 +11,7 @@ import {DemoPageModule} from "../pages/demo-page/demo-page.module";
 import {PopupModelModule} from "../pages/popup-menu-model/popup-modal.module";
 import {IonicOfficialComponentsPageModule} from "../pages/ionic-official-components/ionic-official-components.module";
 import {ListPageModule} from "../pages/list/list.module";
+import {MenuPageModule} from "../pages/menu/menu.module";
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {ListPageModule} from "../pages/list/list.module";
     PopupModelModule,
     IonicOfficialComponentsPageModule,
     ListPageModule,
+    MenuPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

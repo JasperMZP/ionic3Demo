@@ -13,6 +13,7 @@ export class DemoPage implements OnInit {
   private greeting: string;
   public isShowMore: boolean;
   private msgToChild: string;
+  private sayHello:string;
 
   constructor(private navCtr: NavController, private logger: LoggerService) {
   }
@@ -21,9 +22,10 @@ export class DemoPage implements OnInit {
     this.greeting = 'hello!!!!!!';
     this.logger.debug("demo page 已经初始化完毕");
     this.msgToChild = 'message from parent';
+    this.sayHello = 'hi childComponent';
   }
 
-  sendToChild(msgToChild: string): void {
+  sendToChildPage(msgToChild: string): void {
     this.navCtr.push(ChildPage, {msgToChild});
   }
 }

@@ -8,6 +8,7 @@ import {NgModule} from "@angular/core";
 import {IonicPageModule} from "ionic-angular";
 import {LoggerService} from "./logger.service";
 import {ChildModule} from "./demo-child/child.module";
+import {DemochildComponentModule} from "../../components/demochild/demochild.module";
 @NgModule({
   declarations: [
     DemoPage,
@@ -16,7 +17,8 @@ import {ChildModule} from "./demo-child/child.module";
   imports: [
     FormsModule,
     IonicPageModule.forChild(DemoPage),
-    ChildModule
+    ChildModule,
+    DemochildComponentModule
   ],
   entryComponents: [
     DemoPage,

@@ -11,6 +11,7 @@ import {PageOne} from "../pages/page-one/page-one";
 import {DemoPage} from "../pages/demo-page/demo-page";
 import {PopupModalsPage} from "../pages/popup-menu-model/popup-modal";
 import {IonicOfficialComponentsPage} from "../pages/ionic-official-components/ionic-official-components";
+import {MenuPage} from "../pages/menu/menu";
 
 
 @Component({
@@ -37,6 +38,7 @@ export class MyApp {
       {title: 'demo page', component: DemoPage},
       {title: 'popup model page',component:PopupModalsPage},
       {title:'Ionic Official Components',component:IonicOfficialComponentsPage},
+      {title:'menu page',component:MenuPage},
     ];
   }
 
